@@ -1,0 +1,68 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pattern</title>
+</head>
+<body>
+    
+<h1 style="text-align: center;">pattern</h1>
+
+<h2 style="text-align: center;">Pyramid triangle star pattern in javascript</h2>
+
+
+   
+
+
+<script>
+
+    for(let $y=1;$y<=5;$y++){
+        console.log("*".repeat($y));
+    }
+
+
+
+    
+  
+    let n = 5; 
+    let x = "";
+  
+    for (let i = 1; i <= n; i++) {
+      
+      for (let j = n; j > i; j--) {
+        x += " ";
+      }
+ 
+      for (let k = 0; k < i * 2 - 1; k++) {
+        x += "*";
+      }
+      x += "<br>";
+    }
+    document.write(`<pre>${x}</pre>`);
+
+
+    let a = 5; 
+    let string = "";
+    for (let i = 0; i < a; i++) {
+      for (let j = 0; j < i; j++) {
+        string += " ";
+      }
+      for (let k = 0; k < (a - i) * 2 - 1; k++) {
+        string += "*";
+      }
+      string += "\n";
+    }
+    document.write(`<pre>${string}</pre>`);
+  
+</script>
+
+
+</body>
+</html>

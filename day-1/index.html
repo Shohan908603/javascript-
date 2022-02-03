@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="image/index.png" type="image/icon">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script </title>
+</head>
+<body>
+
+    <div class="light">
+
+
+    <h1>Java Scriptp</h1>
+    <button  type="button" onclick="document.getElementById('demo').innerHTML=Date()">Click me to display Date and Time</button>
+    <p id="demo"></p>
+
+    <hr>
+    
+    <h1> What can JavaScript Do </h1>
+    <p id="demo0">JavaScript change Html content</p>
+    <button type="button" class="button2" onclick="document.getElementById('demo0').innerHTML='Hello I am Shohan'">Click</button>
+
+    <hr>
+
+    
+
+        <button onclick="document.getElementById('image').src='image/onlight.gif'">
+            On the light
+        </button>
+    
+        <img id="image" src="image/light.jpg" style="width: 100px;">
+    
+        <button onclick="document.getElementById('image').src='image/light.jpg'">
+            Off the light
+        </button>
+
+
+
+        <hr class="hr2">
+
+
+        <h2>This Window is Print out Method . </h2>
+        <button onclick="window.print()">Print</button>
+
+        <h1>java output </h1>
+        <button type="button" onclick="document.write(8+9)" > Try It </button>
+
+        <h2>JavaScript Statement</h2>
+        <button type="button" onclick="myFunction()">click Me</button>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

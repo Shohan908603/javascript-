@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page </title>
+</head>
+<body>
+    <h2>javascript string  properties</h2>
+
+    <p>The lenght property returns the length </p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    
+    <br>
+    <button onclick="myFunction()">Try it</button>
+
+<p id="demo">Please visit Microsoft!</p>
+
+
+
+<p id="demo2"></p>
+
+
+<p id="demo3"></p>
+
+<p id="demo4"></p>
+ 
+<p id="demo5"></p>
+
+<p id="demo6"></p>
+    
+<script>
+    let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    document.getElementById("demo").innerHTML = text.length;
+
+
+   
+
+    const cars =[];
+    cars[0]="Saab";
+    cars[1]="Volvo";
+    cars[2]="BMW";
+    document.getElementById("demo3").innerHTML = cars;
+
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+
+fruits.sort();
+document.getElementById("demo2").innerHTML = fruits;
+
+const d = new Date();
+document.getElementById("demo4").innerHTML = d.getTime();
+
+document.getElementById("demo5").innerHTML = 
+"<p><b>Math.E:</b> " + Math.E + "</p>" +
+"<p><b>Math.PI:</b> " + Math.PI + "</p>" +
+"<p><b>Math.SQRT2:</b> " + Math.SQRT2 + "</p>" +
+"<p><b>Math.SQRT1_2:</b> " + Math.SQRT1_2 + "</p>" +
+"<p><b>Math.LN2:</b> " + Math.LN2 + "</p>" +
+"<p><b>Math.LN10:</b> " + Math.LN10 + "</p>" +
+"<p><b>Math.LOG2E:</b> " + Math.LOG2E + "</p>" +
+"<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>";
+
+document.getElementById("demo6").innerHTML = Math.round(4.9);
+    </script>
+</body>
+</html>
